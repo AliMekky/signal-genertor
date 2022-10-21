@@ -29,8 +29,8 @@ it will delete the oldest backup.
 #### User Manual : 
 1. by creating the cron job it is automated.
 2. to create the cron jon, open the terminal :
-~ crontab -e
-inside the crontab : 
+~ crontab -e     
+inside the crontab :     
 */1 * * * * /bin/sh Path/backup-cron.sh src_directory dest_directory max_backups > out.txt
 ***************************************************************************
 #### Additional info: 
