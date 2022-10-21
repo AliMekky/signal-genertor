@@ -28,14 +28,14 @@ it will delete the oldest backup.
 ****************************************************************************
 #### User Manual : 
 1. by creating the cron job it is automated.
-2. to create the cron jon, open the terminal :
+2. to create the cron jon, open the terminal :     
 ~ crontab -e     
 inside the crontab :     
 */1 * * * * /bin/sh Path/backup-cron.sh src_directory dest_directory max_backups > out.txt
 ***************************************************************************
 #### Additional info: 
-considering that * * * * * --> minutes hours days months week_days respectively 
-to run the backup every 3rd friday of the month at 12:31 am : 
-*/31 12 15-21 * 5 /bin/sh Path/backup-cron.sh src_directory dest_directory max_backups >> out.txt
+considering that * * * * * --> minutes hours days months week_days respectively       
+to run the backup every 3rd friday of the month at 12:31 am :       
+*/31 12 15-21 * 5 /bin/sh Path/backup-cron.sh src_directory dest_directory max_backups >> out.txt           
 
 as week days starts from 0 for sunday, and possible days for the 3rd friday between 15 and 21 from every month.
